@@ -5,7 +5,7 @@ class ProbniModel(object):
     last_predict = None
     
     def __init__(self):
-        with open("C:/Users/pivankovicmilosevic/svm-novelty-detector", "rb") as model_file:
+        with open("svm-novelty-detector", "rb") as model_file:
             self._lr_model = joblib.load(model_file)
         
     def predict(self, X, feature_names):
